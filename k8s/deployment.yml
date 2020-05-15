@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udacity-deployment
+  name: udacity-proj4
   labels:
     app: udacity
 spec:
@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: udacity
-        image: scaredcat/udacity-kube
+        image: abhimanyudwivedi/project4
         ports:
         - containerPort: 80
         livenessProbe:

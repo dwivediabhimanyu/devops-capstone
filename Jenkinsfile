@@ -19,5 +19,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                sh "kubectl set image deployment/project4 devops=abhimanyudwivedi/project4:latest"
+            }
+        }
     }
 }
